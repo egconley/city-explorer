@@ -9,8 +9,9 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3002;
 
-app.get('/cool', (request, response) => {
-  response.send('cool data from the /cool route');
+app.get('/location', (request, response) => {
+  // request.get('target form entry and see if it\'s teh appropriate data for this function');
+  response.send('blah blah');
 })
 
 app.get('/location', (request, response) => {
