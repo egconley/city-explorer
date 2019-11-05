@@ -15,7 +15,7 @@ app.get('/cool', (request, response) => {
 
 app.get('/location', (request, response) => {
   const geoData = require('./data/geo.json')
-  const city = request.query;
+  const city = request.query.data;
   response.send(city);
 })
 
