@@ -10,11 +10,6 @@ const app = express();
 const PORT = process.env.PORT || 3002;
 
 app.get('/location', (request, response) => {
-  // request.get('target form entry and see if it\'s teh appropriate data for this function');
-  response.send('blah blah');
-})
-
-app.get('/location', (request, response) => {
   const geoData = require('./data/geo.json')
   const city = request.query.data;
   const locationData = new Location(city, geoData);
