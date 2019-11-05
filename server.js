@@ -13,7 +13,7 @@ app.get('/cool', (request, response) => {
   response.send('cool data from the /cool route');
 })
 
-// app.use( express.static('./starter-code') );
+app.use( express.static('./city-explorer') );
 
 app.listen(PORT, () => {
   console.log(`listening on PORT ${PORT}`);
